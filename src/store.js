@@ -299,8 +299,8 @@ function installModule (store, rootState, path, module, hot) {
   const local = module.context = makeLocalContext(store, namespace, path)
 
   module.forEachMutation((mutation, key) => {
-    const type = action.root ? key : namespace + key
-    const handler = action.handler || mutation
+    const type = mutation.root ? key : namespace + key
+    const handler = mutation.handler || mutation
     registerMutation(store, type, handler, local)
   })
 

@@ -266,7 +266,7 @@ var objectAssert = {
 
 var assertTypes = {
   getters: functionAssert,
-  mutations: functionAssert,
+  mutations: objectAssert,
   actions: objectAssert
 };
 

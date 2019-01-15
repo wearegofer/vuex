@@ -97,7 +97,7 @@ const objectAssert = {
 
 const assertTypes = {
   getters: functionAssert,
-  mutations: functionAssert,
+  mutations: objectAssert,
   actions: objectAssert
 }
 
